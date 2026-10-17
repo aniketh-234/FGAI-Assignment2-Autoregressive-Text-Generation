@@ -1,0 +1,42 @@
+{
+  "dataset": "Tiny Shakespeare",
+  "dataset_source": "https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt",
+  "context_length": 10,
+  "vocabulary_size": 8000,
+  "epochs": 3,
+  "results": [
+    {
+      "model": "GRU",
+      "test_loss": 5.090641656882094,
+      "test_perplexity": 162.49409406307504,
+      "test_accuracy": 0.13849230153969205,
+      "training_time_seconds": 138.11472463607788,
+      "parameters": 1334656
+    },
+    {
+      "model": "LSTM",
+      "test_loss": 5.100087862543001,
+      "test_perplexity": 164.03631931491384,
+      "test_accuracy": 0.14385122975404918,
+      "training_time_seconds": 111.99299669265747,
+      "parameters": 1350208
+    },
+    {
+      "model": "Simple RNN",
+      "test_loss": 5.140395601375941,
+      "test_perplexity": 170.78331707447447,
+      "test_accuracy": 0.16272745450909817,
+      "training_time_seconds": 102.1251151561737,
+      "parameters": 1303552
+    },
+    {
+      "model": "Bidirectional RNN",
+      "test_loss": 5.234736520656226,
+      "test_perplexity": 187.67965011808528,
+      "test_accuracy": 0.1550889822035593,
+      "training_time_seconds": 187.42190551757812,
+      "parameters": 2087104
+    }
+  ],
+  "best_by_test_perplexity": "GRU"
+}
